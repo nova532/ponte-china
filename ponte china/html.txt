@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ponte China - Importação Inteligente</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Ponte China</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#processo">Como Funciona</a></li>
+          <li><a href="#cotacao">Cotação</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>A sua ponte direta para fornecedores da China</h2>
+      <p>Traga produtos do Xianyu, Taobao, 1688 e Alibaba para Moçambique de forma fácil, segura e transparente.</p>
+      <a href="#cotacao" class="btn">Pedir Cotação</a>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>A <strong>Ponte China</strong> é uma plataforma que conecta clientes em Moçambique diretamente com fornecedores na China. 
+      Trabalhamos com agentes confiáveis para garantir que a sua compra seja entregue com segurança e transparência.</p>
+    </div>
+  </section>
+
+  <!-- Processo -->
+  <section id="processo">
+    <div class="container">
+      <h2>Como Funciona</h2>
+      <ol>
+        <li>Cliente envia o link do produto (Xianyu, Taobao, 1688, Alibaba).</li>
+        <li>Recebemos o pedido e enviamos uma cotação detalhada em até 12 horas.</li>
+        <li>Após aprovação, o cliente paga 50% para garantir o pedido.</li>
+        <li>O agente compra, envia via marítima ou aérea e faz a entrega final em Moçambique.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Cotação -->
+  <section id="cotacao">
+    <div class="container">
+      <h2>Solicitar Cotação</h2>
+      <form id="cotacaoForm">
+        <label for="link">Link do Produto</label>
+        <input type="url" id="link" name="link" placeholder="Cole aqui o link do produto" required>
+
+        <label for="whatsapp">WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+258 84 000 0000" required>
+
+        <label for="observacoes">Observações</label>
+        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Tamanhos, cores ou outros detalhes"></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+      </form>
+      <p id="mensagem"></p>
+    </div>
+  </section>
+
+  <!-- Vantagens -->
+  <section id="vantagens">
+    <div class="container">
+      <h2>Por que escolher a Ponte China?</h2>
+      <ul>
+        <li>✔️ Conexão direta com fornecedores confiáveis.</li>
+        <li>✔️ Transparência total nos preços e processo.</li>
+        <li>✔️ Agente local para garantir segurança e entrega.</li>
+        <li>✔️ Suporte dedicado via WhatsApp.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <footer id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Email: suporte@pontechina.com</p>
+      <p>WhatsApp: +258 84 000 0000</p>
+      <p>&copy; 2025 Ponte China - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
