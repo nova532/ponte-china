@@ -1,99 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ponte China - Importação Inteligente</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ponte China — Importação Inteligente Xianyu / Taobao / 1688</title>
+<meta name="description" content="Cole o link do produto do Xianyu, Taobao, 1688 ou Alibaba e receba a cotação em até 12h no WhatsApp. Serviço com agente na China e entrega em Moçambique.">
+<meta name="author" content="Ponte China">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ponte China — Importação Inteligente">
+<meta property="og:description" content="Cole o link do produto e receba cotação em 12h. Agente na China, entrega em Moçambique.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ponte-china.example/">
+<meta property="og:image" content="https://ponte-china.example/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 class="logo">Ponte China</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#processo">Como Funciona</a></li>
-          <li><a href="#cotacao">Cotação</a></li>
-          <li><a href="#vantagens">Vantagens</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-content">
-      <h2>A sua ponte direta para fornecedores da China</h2>
-      <p>Traga produtos do Xianyu, Taobao, 1688 e Alibaba para Moçambique de forma fácil, segura e transparente.</p>
-      <a href="#cotacao" class="btn">Pedir Cotação</a>
-    </div>
-  </section>
-
-  <!-- Sobre Nós -->
-  <section id="sobre">
-    <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>A <strong>Ponte China</strong> é uma plataforma que conecta clientes em Moçambique diretamente com fornecedores na China. 
-      Trabalhamos com agentes confiáveis para garantir que a sua compra seja entregue com segurança e transparência.</p>
-    </div>
-  </section>
-
-  <!-- Processo -->
-  <section id="processo">
-    <div class="container">
-      <h2>Como Funciona</h2>
-      <ol>
-        <li>Cliente envia o link do produto (Xianyu, Taobao, 1688, Alibaba).</li>
-        <li>Recebemos o pedido e enviamos uma cotação detalhada em até 12 horas.</li>
-        <li>Após aprovação, o cliente paga 50% para garantir o pedido.</li>
-        <li>O agente compra, envia via marítima ou aérea e faz a entrega final em Moçambique.</li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- Cotação -->
-  <section id="cotacao">
-    <div class="container">
-      <h2>Solicitar Cotação</h2>
-      <form id="cotacaoForm">
-        <label for="link">Link do Produto</label>
-        <input type="url" id="link" name="link" placeholder="Cole aqui o link do produto" required>
-
-        <label for="whatsapp">WhatsApp</label>
-        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+258 84 000 0000" required>
-
-        <label for="observacoes">Observações</label>
-        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Tamanhos, cores ou outros detalhes"></textarea>
-
-        <button type="submit">Enviar Pedido</button>
-      </form>
-      <p id="mensagem"></p>
-    </div>
-  </section>
-
-  <!-- Vantagens -->
-  <section id="vantagens">
-    <div class="container">
-      <h2>Por que escolher a Ponte China?</h2>
-      <ul>
-        <li>✔️ Conexão direta com fornecedores confiáveis.</li>
-        <li>✔️ Transparência total nos preços e processo.</li>
-        <li>✔️ Agente local para garantir segurança e entrega.</li>
-        <li>✔️ Suporte dedicado via WhatsApp.</li>
+<!-- ===============================
+HEADER / NAVBAR
+================================= -->
+<header id="topo" role="banner">
+  <div class="container">
+    <a href="#topo" class="logo" aria-label="Ponte China — Início">Ponte China</a>
+    <nav class="navegacao" role="navigation" aria-label="Navegação principal">
+      <ul class="menu">
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#precos">Preços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
-    </div>
-  </section>
+    </nav>
+  </div>
+</header>
 
-  <!-- Contacto -->
-  <footer id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Email: suporte@pontechina.com</p>
-      <p>WhatsApp: +258 84 000 0000</p>
-      <p>&copy; 2025 Ponte China - Todos os direitos reservados.</p>
+<!-- ===============================
+HERO / BANNER PRINCIPAL
+================================= -->
+<section id="hero" class="hero" role="region" aria-labelledby="hero-titulo">
+  <div class="container">
+    <h1 id="hero-titulo">Sua ponte direta com fornecedores da China</h1>
+    <p class="hero-sub">Importe de <strong>Xianyu</strong>, <strong>Taobao</strong>, <strong>1688</strong> e <strong>Alibaba</strong> para Moçambique — fácil, seguro e transparente.</p>
+    <p class="hero-cta"><a href="#cotacao" class="btn-hero">Pedir Cotação</a></p>
+    <div class="hero-metricas" aria-label="Métricas de confiança">
+      <div class="metric">
+        <div class="metric-num">12h</div>
+        <div class="metric-desc">Prazo de cotação</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">50%</div>
+        <div class="metric-desc">Entrada na aprovação</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">100%</div>
+        <div class="metric-desc">Acompanhamento até entrega</div>
+      </div>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- ===============================
+COMO FUNCIONA
+================================= -->
+<section id="como-funciona" class="como-funciona" aria-labelledby="como-funciona-titulo">
+  <div class="container">
+    <h2 id="como-funciona-titulo">Como Funciona</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="icon">🔗</span>
+        <h3>Cole o Link</h3>
+        <p>Envie o link do produto do Xianyu, Taobao, 1688 ou Alibaba.</p>
+      </div>
+      <div class="step">
+        <span class="icon">📊</span>
+        <h3>Receba Cotação</h3>
+        <p>Em até 12h você recebe a cotação completa via WhatsApp.</p>
+      </div>
+      <div class="step">
+        <span class="icon">✅</span>
+        <h3>Aprovação e Pagamento</h3>
+        <p>Confirme a cotação com entrada de 50% e aprovação do produto.</p>
+      </div>
+      <div class="step">
+        <span class="icon">🚚</span>
+        <h3>Envio e Entrega</h3>
+        <p>Seu pedido é enviado da China e acompanhado até a entrega.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+VANTAGENS
+================================= -->
+<section id="vantagens" class="vantagens" aria-labelledby="vantagens-titulo">
+  <div class="container">
+    <h2 id="vantagens-titulo">Vantagens de usar Ponte China</h2>
+    <div class="vantagem">
+      <h3>Agente na China</h3>
+      <p>Verificação de produtos com fotos e vídeos antes do envio.</p>
+    </div>
+    <div class="vantagem">
+      <h3>Transparência</h3>
+      <p>Você acompanha todas as etapas do pedido em tempo real.</p>
+    </div>
+    <div class="vantagem">
+      <h3>Entrega Rápida</h3>
+      <p>Envio aéreo e marítimo com prazos estimados informados.</p>
+    </div>
+    <div class="vantagem">
+      <h3>Suporte Local</h3>
+      <p>Atendimento em Moçambique com WhatsApp e email dedicados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+PREÇOS / PLANOS
+================================= -->
+<section id="precos" class="precos" aria-labelledby="precos-titulo">
+  <div class="container">
+    <h2 id="precos-titulo">Planos e Preços</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>Básico</h3>
+        <p class="preco">Grátis</p>
+        <p>Receba cotação e acompanhamento básico do pedido.</p>
+        <button>Pedir Cotação</button>
+      </div>
+      <div class="plano">
+        <h3>Premium</h3>
+        <p class="preco">US$ 49</p>
+        <p>Acompanhamento detalhado, verificação de produtos e suporte prioritário.</p>
+        <button>Pedir Cotação</button>
+      </div>
+      <div class="plano">
+        <h3>Profissional</h3>
+        <p class="preco">US$ 99</p>
+        <p>Serviço completo, desde cotação até entrega, com gestão total do pedido.</p>
+        <button>Pedir Cotação</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+DEPOMIMENTOS
+================================= -->
+<section id="depoimentos" class="depoimentos" aria-labelledby="depoimentos-titulo">
+  <div class="container">
+    <h2 id="depoimentos-titulo">O que nossos clientes dizem</h2>
+    <div class="depoimento">
+      <p>"A Ponte China tornou minha importação simples e segura. Recomendo!"</p>
+      <span>- João M.</span>
+    </div>
+    <div class="depoimento">
+      <p>"Recebi minha cotação em poucas horas e o acompanhamento foi impecável."</p>
+      <span>- Maria F.</span>
+    </div>
+    <div class="depoimento">
+      <p>"O serviço é transparente e confiável. Excelente para revendedores."</p>
+      <span>- Pedro A.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+FAQ
+================================= -->
+<section id="faq" class="faq" aria-labelledby="faq-titulo">
+  <div class="container">
+    <h2 id="faq-titulo">Perguntas Frequentes</h2>
+    <details class="faq-item">
+      <summary>Como garantem a qualidade?</summary>
+      <p>O agente na China verifica o produto antes do envio e partilha vídeos/fotos de confirmação.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Qual o prazo de entrega?</summary>
+      <p>Envio aéreo pode levar 7–14 dias úteis; marítimo depende do contentor. Indicamos prazos na cotação.</p>
+    </details>
+    <details class="faq-item">
+      <summary>E se eu desistir?</summary>
+      <p>Pedidos personalizados podem ter custos não reembolsáveis. Os termos são explicados na cotação.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ===============================
+FORMULÁRIO DE COTAÇÃO
+================================= -->
+<section id="cotacao" class="cotacao" aria-labelledby="cotacao-titulo">
+  <div class="container">
+    <h2 id="cotacao-titulo">Solicitar Cotação</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="seu@email.com">
+
+      <label for="whatsapp">WhatsApp</label>
+      <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+258 84 000 0000">
+
+      <label for="link-produto">Link do Produto</label>
+      <input type="url" id="link-produto" name="link-produto" required placeholder="Cole o link aqui">
+
+      <label for="observacoes">Observações</label>
+      <textarea id="observacoes" name="observacoes" rows="4" placeholder="Detalhes adicionais"></textarea>
+
+      <button type="submit">Enviar Cotação</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===============================
+CONTACTO
+================================= -->
+<section id="contacto" aria-labelledby="contacto-titulo">
+  <div class="container">
+    <h2 id="contacto-titulo">Contacto</h2>
+    <address>
+      <p><strong>Email:</strong> suporte@pontechina.com</p>
+      <p><strong>WhatsApp:</strong> +258 84 000 0000</p>
+      <p><strong>Atendimento:</strong> Seg–Sáb, 08h–18h</p>
+    </address>
+  </div>
+</section>
+
+<!-- ===============================
+RODAPÉ
+================================= -->
+<footer id="rodape" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2025 Ponte China. Todos os direitos reservados.</p>
+    <ul class="links-legais">
+      <li><a href="#termos">Termos de Serviço</a></li>
+      <li><a href="#privacidade">Política de Privacidade</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ===============================
+TERMS & PRIVACIDADE
+================================= -->
+<section id="termos" aria-labelledby="termos-titulo">
+  <div class="container">
+    <h2 id="termos-titulo">Termos de Serviço</h2>
+    <p>Este serviço atua como intermediário de cotação e facilitação de compras na China. Alguns pedidos personalizados podem envolver taxas não reembolsáveis. Detalhes específicos constarão na sua cotação.</p>
+  </div>
+</section>
+
+<section id="privacidade" aria-labelledby="privacidade-titulo">
+  <div class="container">
+    <h2 id="privacidade-titulo">Política de Privacidade</h2>
+    <p>Coletamos dados como nome, e-mail, WhatsApp e links de produtos apenas para fornecer o serviço de cotação e acompanhamento de pedidos, conforme a legislação vigente.</p>
+  </div>
+</section>
+
 </body>
 </html>

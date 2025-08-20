@@ -1,0 +1,471 @@
+/* ===============================
+RESET E BASE
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===============================
+TIPOGRAFIA AVANÇADA
+================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  color: #0077cc;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+strong {
+  font-weight: 700;
+  color: #0077cc;
+}
+
+/* ===============================
+CONTAINERS
+================================= */
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* ===============================
+HEADER / NAVBAR
+================================= */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+header.scrolled {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.nav-menu li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0077cc;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+/* ===============================
+HERO / BANNER
+================================= */
+.hero {
+  background: linear-gradient(rgba(0,119,204,0.6), rgba(0,119,204,0.6)),
+              url('https://source.unsplash.com/1600x800/?china,import') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* altura total da tela */
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  max-width: 700px; /* limita largura do texto */
+}
+
+.btn-hero {
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: #ffc107;
+  transform: translateY(-3px);
+}
+
+.hero-metrics {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-num {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+.metric-desc {
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+/* ===============================
+SEÇÕES
+================================= */
+section h2 {
+  font-size: 2.4rem;
+  color: #0077cc;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #ffcc00;
+  display: block;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+/* ===============================
+COMO FUNCIONA
+================================= */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: all 0.3s;
+}
+
+.step:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.step .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+}
+
+/* ===============================
+VANTAGENS
+================================= */
+.vantagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.vantagem {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.vantagem:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+/* ===============================
+PLANOS / PREÇOS
+================================= */
+.planos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.plano {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.plano:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.plano h3 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.plano .preco {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.plano button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.plano button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+DEPOIMENTOS
+================================= */
+.depoimentos {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.depoimento {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.depoimento:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.depoimento p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.depoimento span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-align: right;
+  color: #0077cc;
+}
+
+/* ===============================
+FAQ
+================================= */
+.faq-item {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+}
+
+.faq-item summary {
+  font-weight: 700;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.faq-item p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+FORMULÁRIO
+================================= */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 8px rgba(0,119,204,0.2);
+  outline: none;
+}
+
+form button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+RODAPÉ
+================================= */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+/* ===============================
+RESPONSIVO AVANÇADO
+================================= */
+@media(max-width:1024px){
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media(max-width:768px){
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-metrics {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .steps, .vantagens, .planos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+ANIMAÇÕES SUAVES
+================================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
